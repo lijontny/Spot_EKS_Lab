@@ -30,11 +30,11 @@ sudo yum install -y kubectl
 Ref: [here](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
 3. terraform (Already installed in cloud9)
-- Verify the terraform version
+   - Verify the terraform version
 ```commandline
 terraform -version
 ```
-Output:
+Output should be:
 ```commandline
 Terraform v1.3.6
 on linux_amd64
