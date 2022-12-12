@@ -85,3 +85,7 @@ managed_node_groups = {
 terraform plan
 terraform apply
 ```
+4. Verify nodes
+```commandline
+kubectl get nodes
+```
