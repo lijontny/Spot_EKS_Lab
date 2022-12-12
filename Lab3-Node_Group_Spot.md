@@ -15,8 +15,7 @@ managed_node_groups = {
       ami_type               = "AL2_x86_64"  # Available options -> AL2_x86_64, AL2_x86_64_GPU, AL2_ARM_64, CUSTOM
       release_version        = ""            # Enter AMI release version to deploy the latest AMI released by AWS. Used only when you specify ami_type
       capacity_type          = "SPOT"   # ON_DEMAND or SPOT
-      instance_types         = ["m4.xlarge, m5.xlarge, m5a.xlarge, m5ad.xlarge, m5d.xlarge, m6a.xlarge, t2.xlarge, t3.xlarge
-t3a.xlarge] # List of instances used only for SPOT type
+      instance_types         = instance_types         = ["m4.xlarge", "m5.xlarge", "m5a.xlarge", "m5ad.xlarge", "m5d.xlarge", "m6a.xlarge", "t2.xlarge", "t3.xlarge", "t3a.xlarge"]
       format_mount_nvme_disk = true          # format and mount NVMe disks ; default to false
 
       # Launch template configuration
