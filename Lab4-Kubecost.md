@@ -38,3 +38,9 @@ spec:
                number: 9090
 EOF
 ```
+3. Find endpoint to access Kubecost ALB
+```commandline
+$ kubectl get ingress -n kubecost
+NAME               CLASS     HOSTS   ADDRESS                                                                  PORTS   AGE
+kubecost-ingress   aws-alb   *       k8s-kubecost-kubecost-xxxxxxxxx.us-west-2.elb.amazonaws.com   80      34s
+```
