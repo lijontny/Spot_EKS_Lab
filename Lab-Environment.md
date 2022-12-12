@@ -39,6 +39,12 @@ Output should be:
 Terraform v1.3.6
 on linux_amd64
 ```
+4. amazon-ec2-instance-selector
+```commandline
+curl -Lo ec2-instance-selector https://github.com/aws/amazon-ec2-instance-selector/releases/download/v2.0.3/ec2-instance-selector-`uname | tr '[:upper:]' '[:lower:]'`-amd64 && chmod +x ec2-instance-selector
+sudo mv ec2-instance-selector /usr/local/bin/
+ec2-instance-selector --version
+```
 
 ## Cloud9 IAM Role
 1. Attach an Admin role to cloud9 - Follow instructions [here](https://ec2spotworkshops.com/using_ec2_spot_instances_with_eks/010_prerequisites/attach_workspaceiam.html)
