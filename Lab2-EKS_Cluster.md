@@ -1,4 +1,4 @@
-#Build Amazon EKS with Terraform
+# Build Amazon EKS with Terraform
 In this lab, we will deploy 
 - new VPC
 - private EKS cluster with public and private subnets
