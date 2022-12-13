@@ -73,8 +73,8 @@ managed_node_groups = {
       ssh_security_group_id = ""
 
       additional_tags = {
-        ExtraTag    = "m5x-on-demand"
-        Name        = "m5x-on-demand"
+        ExtraTag    = "spot"
+        Name        = "SPOT-Cluster"
         subnet_type = "private"
       }
     }

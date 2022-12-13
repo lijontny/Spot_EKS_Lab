@@ -1,5 +1,4 @@
 # Manual Application Deployment
-Note: This Application will be used to test Karpenter scale out mechanism
 
 ### Deploy a sample nginx deployment with 2 replicas
 ```commandline
@@ -41,4 +40,8 @@ Expected output:
 ```commandline
 NAME               READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment   2/2     2            2           23s
+```
+### Scale Out
+```commandline
+kubectl scale --replicas=3 deployment/nginx-deployment
 ```

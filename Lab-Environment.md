@@ -45,7 +45,15 @@ curl -Lo ec2-instance-selector https://github.com/aws/amazon-ec2-instance-select
 sudo mv ec2-instance-selector /usr/local/bin/
 ec2-instance-selector --version
 ```
-
+5. eksctl
+```commandline
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+```
+6. Helm
+```commandline
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
 ## Cloud9 IAM Role
 1. Attach an Admin role to cloud9 - Follow instructions [here](https://ec2spotworkshops.com/using_ec2_spot_instances_with_eks/010_prerequisites/attach_workspaceiam.html)
 2. Update IAM settings in Cloud9 - Follow instructions [here](https://ec2spotworkshops.com/using_ec2_spot_instances_with_eks/010_prerequisites/update_workspaceiam.html)
