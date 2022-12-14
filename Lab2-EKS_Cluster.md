@@ -53,7 +53,7 @@ Note: This step will add EKS cluster context into your kube config file (/home/e
     kubectl get nodes
     ``` 
    - List pods
-    ````commandline
+    ```commandline
     kubectl get pods -n kube-system
-    ````
+    ```
 Note: `-n` is the key to choose a specific namespace inside kubernetes cluster
