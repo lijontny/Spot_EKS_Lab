@@ -38,9 +38,9 @@ Note: This command does not actually carry out the proposed changes You can use 
      terraform apply -target="module.eks_blueprints"
      ```
    - Deploy the add-ons
-    ```commandline
-    terraform apply
-    ```
+     ```commandline
+     terraform apply
+     ```
 Note: Terraform State file will be stored locally in the working directory `terraform.tfstate`
 5. Run output of `configure_kubectl` from Terraform outputs
    ```commandline
