@@ -6,6 +6,7 @@
    ec2-instance-selector --vcpus 4 --memory 16 --gpus 0 --current-generation -a x86_64 --deny-list '.*[ni].*'
     ```
 2. Create Launch Template
+Copy and paste the block below to terraform-aws-eks-blueprints/examples/eks-cluster-with-new-vpc/main.tf inside managed_node_groups session.
 ```commandline
 managed_node_groups = {
      mng_lt = {
