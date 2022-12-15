@@ -49,9 +49,9 @@ Note: Terraform State file will be stored locally in the working directory `terr
 Note: This step will add EKS cluster context into your kube config file (/home/ec2-user/.kube/config)
 6. Validate EKS cluster resources
    - List nodes
-    ```commandline
-    kubectl get nodes
-    ``` 
+     ```commandline
+     kubectl get nodes
+     ```
    - List pods
     ```commandline
     kubectl get pods -n kube-system
